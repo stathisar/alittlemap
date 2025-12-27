@@ -1,74 +1,113 @@
+/* Body & General */
 body {
-    background-color: #ffffffff&noise=5c5c5c&density=13&opacity=52;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background-color: #f7f9fc;
+  color: #333;
 }
 
-#map {
+/* Header */
+header {
+  background-color: #004b8d;
+  color: white;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 50px;
+  margin-right: 1rem;
+  background: white;
+  padding: 4px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* Main & Sections */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  color: #004b8d;
+  font-weight: 600;
+  border-bottom: 2px solid #004b8d;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+p, ul {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: disc inside;
+  margin-left: 1.2rem;
+}
+
+/* Footer */
+footer {
+  background-color: #e4e9ef;
+  color: #555;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Links */
+a {
+  color: #004b8d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Experiment Button */
+.experiment-btn {
+  background-color: #004b8d;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.experiment-btn:hover {
+  background-color: #003366;
+}
+
+/* Map & Containers */
+#map, #menu, #intro, #primary, #footer {
   background-color: #fffffe;
   box-shadow:
       0 1px 1px hsl(0deg 0% 0% / 0.075),
       0 2px 2px hsl(0deg 0% 0% / 0.075),
       0 4px 4px hsl(0deg 0% 0% / 0.075),
       0 8px 8px hsl(0deg 0% 0% / 0.075),
-      0 16px 16px hsl(0deg 0% 0% / 0.075)
-    ;
+      0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
 
-#menu {
-align-items: center;
-background-color:#fffffe; 
-  box-shadow:
-      0 1px 1px hsl(0deg 0% 0% / 0.075),
-      0 2px 2px hsl(0deg 0% 0% / 0.075),
-      0 4px 4px hsl(0deg 0% 0% / 0.075),
-      0 8px 8px hsl(0deg 0% 0% / 0.075),
-      0 16px 16px hsl(0deg 0% 0% / 0.075)
-    ;
+#footer {
+  font-style: italic;
 }
 
-
-#intro {
-  text-align:justify;
-  text-indent: 30px;
-  background-color:#fffffe; 
-  box-shadow:
-      0 1px 1px hsl(0deg 0% 0% / 0.075),
-      0 2px 2px hsl(0deg 0% 0% / 0.075),
-      0 4px 4px hsl(0deg 0% 0% / 0.075),
-      0 8px 8px hsl(0deg 0% 0% / 0.075),
-      0 16px 16px hsl(0deg 0% 0% / 0.075)
-    ;
-}
-
-
-#header{
-  font-family:  "Lucida Console", "Courier New", monospace;
-}
-
-#primary{
-  background-color:#fffffe; 
-  box-shadow:
-      0 1px 1px hsl(0deg 0% 0% / 0.075),
-      0 2px 2px hsl(0deg 0% 0% / 0.075),
-      0 4px 4px hsl(0deg 0% 0% / 0.075),
-      0 8px 8px hsl(0deg 0% 0% / 0.075),
-      0 16px 16px hsl(0deg 0% 0% / 0.075)
-    ;
-}
-
-#footer{
-  background-color:#fffffe; 
-  font-size:small;
-  box-shadow:
-      0 1px 1px hsl(0deg 0% 0% / 0.075),
-      0 2px 2px hsl(0deg 0% 0% / 0.075),
-      0 4px 4px hsl(0deg 0% 0% / 0.075),
-      0 8px 8px hsl(0deg 0% 0% / 0.075),
-      0 16px 16px hsl(0deg 0% 0% / 0.075)
-    ;
-    font-style: italic;
-}
-
-/* Navigation */
+/* Navigation Base */
 .main-nav {
   background-color: #003366;
   color: white;
@@ -77,27 +116,37 @@ background-color:#fffffe;
   top: 0;
   z-index: 1000;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.menu-links a {
-  margin-right: 1rem;
-  color: white;
-  text-decoration: none;
+.menu-links {
+  display: flex;
+  gap: 1rem;
 }
 
-.menu-links a:last-child {
-  margin-right: 0;
+.menu-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.menu-links a:hover {
+  color: #ffcc00;
 }
 
 /* Toggle button */
 .menu-toggle {
   display: none;
   background: none;
-  border: none;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
+  font-weight: 600;
 }
 
 /* Responsive */
@@ -105,6 +154,7 @@ background-color:#fffffe;
   .main-nav {
     flex-direction: column;
     align-items: flex-start;
+    padding: 0.5rem 1rem;
   }
 
   .menu-toggle {
@@ -114,17 +164,18 @@ background-color:#fffffe;
 
   .menu-links {
     display: none;
+    flex-direction: column;
     width: 100%;
+    gap: 0;
   }
 
   .menu-links a {
     display: block;
-    padding: 0.4rem 0;
-    margin: 0;
+    padding: 0.5rem 0;
+    width: 100%;
   }
 
   .menu-links.open {
-    display: block;
+    display: flex;
   }
 }
-
