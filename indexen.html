@@ -173,5 +173,14 @@ That small yet significant project was the beginning of the a little map’s jou
 <footer>
   &copy; 2018–2025 a little map. All rights reserved.
 </footer>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu-links');
+
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('open');
+  });
+</script>
+  
 </body>
 </html>
