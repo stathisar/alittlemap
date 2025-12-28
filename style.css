@@ -107,6 +107,24 @@ a:hover {
   font-style: italic;
 }
 
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+}
+
+.footer-right a {
+  margin-left: 12px;
+  color: #555;
+  font-size: 1.2rem;
+}
+
+.footer-right a:hover {
+  color: #1a73e8;
+}
+
+
 /* Navigation Base */
 .main-nav {
   background-color: #003366;
