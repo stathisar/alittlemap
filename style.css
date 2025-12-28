@@ -115,7 +115,7 @@ a:hover {
 }
 
 .footer-right a {
-  margin-left: 12px;
+  margin-right: 12px;
   display: flex;
   align-items: flex-end;
   color: #555;
