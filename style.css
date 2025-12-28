@@ -60,13 +60,7 @@ ul {
 }
 
 /* Footer */
-footer {
-  background-color: #e4e9ef;
-  color: #555;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-}
+
 
 /* Links */
 a {
@@ -103,8 +97,12 @@ a:hover {
       0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
 
-#footer {
-  font-style: italic;
+footer {
+  background-color: #e4e9ef;
+  color: #555;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
 
 .site-footer {
@@ -113,6 +111,7 @@ a:hover {
   align-items: center;
   padding: 1.2rem 2rem;
 }
+
 
 .footer-right a {
   margin-right: 12px;
