@@ -1,14 +1,14 @@
 /* Body & General */
 /* offset για sticky menu */
 section[id] {
-  scroll-margin-top: 80px; /* για νεότερα browsers */
+  scroll-margin-top: 70px; /* για νεότερα browsers */
 }
 
 section[id]::before {
   content: "";
   display: block;
-  height: 80px;           /* ίδιο ύψος με το menu */
-  margin-top: -80px;
+  height: 70px;           /* ίδιο ύψος με το menu */
+  margin-top: -70px;
   visibility: hidden;
   pointer-events: none;
 }
