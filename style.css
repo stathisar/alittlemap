@@ -59,9 +59,6 @@ ul {
   margin-left: 1.2rem;
 }
 
-/* Footer */
-
-
 /* Links */
 a {
   color: #004b8d;
@@ -87,7 +84,7 @@ a:hover {
 }
 
 /* Map & Containers */
-#map, #menu, #intro, #primary, #footer {
+#map, #menu, #intro, #primary {
   background-color: #fffffe;
   box-shadow:
       0 1px 1px hsl(0deg 0% 0% / 0.075),
@@ -96,29 +93,34 @@ a:hover {
       0 8px 8px hsl(0deg 0% 0% / 0.075),
       0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
-.footer {
+
+/* Footer */
+.footer, #footer {
   background-color: #004b8d;
+  color: white;
+  padding: 1rem 0.5rem;
 }
 
 .site-footer {
   display: flex;
-  justify-content: center; /* κεντράρει όλα τα στοιχεία μαζί */
+  justify-content: space-between;
   align-items: center;
-  position: relative;      /* για απόλυτη τοποθέτηση των icons */
   max-width: 1200px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .footer-center {
   text-align: center;
+  flex: 1 1 100%;
+  margin-bottom: 0.5rem;
 }
 
 .footer-right {
-  float: right;
+  display: flex;
   gap: 12px;
+  align-items: center;
 }
-
-
 
 /* Navigation Base */
 .main-nav {
