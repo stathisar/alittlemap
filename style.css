@@ -110,8 +110,7 @@ a:hover {
 }
 
 .footer-right {
-  display: flex;
-  justify-content: flex-end;
+  float: right;
   gap: 12px;
 }
 
