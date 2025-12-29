@@ -4,7 +4,7 @@ section[id] {
   scroll-margin-top: 70px; /* για νεότερα browsers */
 }
 
-section[id]::before {
+section[id]::relative {
   content: "";
   display: block;
   height: 70px;           /* ίδιο ύψος με το menu */
