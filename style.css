@@ -1,20 +1,5 @@
 /* Body & General */
 /* offset για sticky menu */
-section[id] {
-  scroll-margin-top: 70px; /* για νεότερα browsers */
-}
-
-section[id]::relative {
-  content: "";
-  display: block;
-  height: 70px;           /* ίδιο ύψος με το menu */
-  margin-top: -70px;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.6;
