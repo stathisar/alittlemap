@@ -1,6 +1,6 @@
 /* Body & General */
 /* offset για sticky menu */
-.anchor-offset {
+.offset {
   height: 70px; /* ύψος sticky menu */
   margin-top: -70px; /* τραβάει το περιεχόμενο πίσω ώστε να φαίνεται ο τίτλος */
   visibility: hidden;
