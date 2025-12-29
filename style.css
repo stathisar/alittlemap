@@ -112,8 +112,6 @@ a:hover {
 .footer-right {
   display: flex;
   gap: 12px;
-  position: absolute;      /* τα βάζει δεξιά ανεξάρτητα */
-  right: 2rem;
 }
 
 
