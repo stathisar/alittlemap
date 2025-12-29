@@ -112,6 +112,8 @@ footer {
 }
 
 .footer-right a {
+   display: flex;
+  gap: 12px;
   margin-left: 12px; /* αριστερά γιατί είναι δεξιά τα icons */
   color: #555;
   font-size: 1.2rem;
