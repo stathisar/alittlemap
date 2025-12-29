@@ -117,6 +117,7 @@ a:hover {
 }
 
 .footer-right {
+  margin-left: auto; /* σπρώχνει τα icons δεξιά */
   display: flex;
   gap: 12px;
   align-items: center;
