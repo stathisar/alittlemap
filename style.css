@@ -39,11 +39,15 @@ main {
   padding: 0 1rem;
 }
 
-section:before { 
+section { 
+	margin-bottom: 2.5rem;
+}
+
+.offset:before { 
 	display: block; 
  	content: " "; 
-  	height: 150px;      /* Give height of your fixed element */
-        margin-top: -150px; /* Give negative margin of your fixed element */  	
+  	height: 70px;      /* Give height of your fixed element */
+        margin-top: -70px; /* Give negative margin of your fixed element */  	
         visibility: hidden; 
   margin-bottom: 2.5rem;
 }
