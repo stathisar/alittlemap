@@ -1,7 +1,18 @@
 /* Body & General */
-html {
-  scroll-padding-top: 70px; /* Ύψος του sticky menu */
+/* offset για sticky menu */
+section[id] {
+  scroll-margin-top: 80px; /* για νεότερα browsers */
 }
+
+section[id]::before {
+  content: "";
+  display: block;
+  height: 80px;           /* ίδιο ύψος με το menu */
+  margin-top: -80px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 
 
 body {
