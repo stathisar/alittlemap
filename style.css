@@ -96,6 +96,10 @@ a:hover {
       0 8px 8px hsl(0deg 0% 0% / 0.075),
       0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
+#footer {
+  background-color: blue;
+}
+
 .site-footer {
   display: flex;
   justify-content: center; /* κεντράρει όλα τα στοιχεία μαζί */
