@@ -1,23 +1,10 @@
 <!DOCTYPE html>
-<html lang="el">
+<html lang="en">
 <head>
-  
-<link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZHVMHEJPP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-0ZHVMHEJPP');
-</script>
-
 <title>a little map - Research, Education, GIS</title>
-
-<link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <header>
@@ -39,15 +26,15 @@
 </nav>
 
 <main>
-  <section>
-    <h2 id="welcome">Welcome to a little map</h2>
+  <section id="welcome">
+    <h2>Welcome to a little map</h2>
     <p>
       Based in Athens, Greece, a little map is a very small research and education brand that is functional since August 2018. A little map conducts research, and generates educational content, having also collaborations with organisations and individuals in Greece and abroad.
     </p>
   </section>
 
-  <section>
-    <h2 id="services">What a little map offers:</h2>
+  <section id="services">
+    <h2>What a little map offers:</h2>
     <ul>
       <li><strong>Research & Analysis:</strong> Interdisciplinary research across social media, disaster management, crisis management, natural disasters, geography, tourism, environmental studies, geopolitics etc.</li>
       <li><strong>GIS, Mapping & Data Solutions:</strong> Design, implementation, and analysis of location-based projects for international clients and cross-border collaborations.</li>
@@ -56,49 +43,61 @@
     </ul>
   </section>
 
-  <section>
-    <h2 id="history">Background</h2>
+  <section id="history">
+    <h2>Background</h2>
     <p>
-      The very first revenue in the history of the business came from the Russian Embassy in Greece in 2018. This was for a mapping application created to honor the Russian victims of the Second World War, in the Greek area. That small yet significant project was the beginning of the a little map’s journey. Since then, operations have expanded through collaborations with various public sector bodies of Greece, primarily via registrations as an individual professional. At the same time, the business has grown its international presence by engaging diverse clients worldwide through platforms like Upwork. In 2020, the brand “a little map” was officially registered with the Athens Chamber of Commerce.
+      The very first revenue in the history of the business came from the Russian Embassy in Greece in 2018. This was for a mapping application created to honor the Russian victims of the Second World War, in the Greek area. During that period there wasn't any specific brand. The app remained online for some time, during the start of the recent war conflicts, it was eventually retired from the embassy’s webpage.
+      <br><br>
+      That small yet significant project was the beginning of the a little map’s journey. Since then, operations have expanded through collaborations with various public sector bodies of Greece, primarily via registrations as an individual professional. At the same time, the business has grown its international presence by engaging diverse clients worldwide through platforms like Upwork.
+      <br><br>
+      In 2020, the brand “a little map” was officially registered with the Athens Chamber of Commerce.
     </p>
   </section>
 
-  <section>
-    <h2 id="why">Why Work With a little map</h2>
+  <section id="why">
+    <h2>Why Work With a little map</h2>
     <ul>
       <li>Proven track record of delivering research with real-world impact.</li>
       <li>Flexible, scalable infrastructure for both short- and long-term projects.</li>
-      <li>Flexible collaborations in either short-term or long-term demand.</li>
+      <li>Flexible collaborations in a either short-term long-term demand.</li>
       <li>Commitment to transparency and reliability in every collaboration.</li>
     </ul>
   </section>
 
+  <section id="projects">
+    <h2>Current Research Project</h2>
+    <p>
+      a little map is currently running a crowdfunding project for expanding Deucalion and Pyrrha datasets and for providing open access. The project is hosted on <strong>Experiment.com</strong>.
+    </p>
+    <p style="margin-top: 1rem; text-align: center;">
+      <a href="https://experiment.com/projects/expanding-flood-image-datasets-for-ai-training-and-improved-disaster-response" target="_blank" class="experiment-btn">
+        View the project on Experiment.com
+      </a>
+    </p>
+    <p style="margin-top: 1rem; font-size:0.9rem; color:#555;">
+      <em>Status:</em> Ongoing, aiming to reach the funding target; next steps, as described in the project, will include dataset expansion.
+    </p>
+  </section>
 
-  <section>
-    <h2 id="contact">Contact</h2>
+  <section id="contact">
+    <h2>Contact</h2>
     <p>
       a little map | 20 Kalogrezis St., 15232 Chalandri, Athens, Greece<br/>
       General Commercial Register No.: 158949603000<br/>
-      Email: <a href="mailto:sgarapostathis@alittlemap-research.gr">sgarapostathis@alittlemap-research.gr</a><br/>
+      Email: <a href="mailto:sgarapostathis@alittlemap-research.gr">sgarapostathis@alittlemap-research.gr</a>
     </p>
   </section>
 </main>
 
-<footer id="footer">
+<footer class="footer" id="footer">
   <div class="site-footer">
     <div class="footer-center">
-      &copy; 2018–2026 a little map. All rights reserved.  
+      &copy; 2018–2025 a little map. All rights reserved.
     </div>
     <div class="footer-right">
-      <a href="https://www.instagram.com/a.little.map/" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://www.facebook.com/profile.php?id=100057355393472" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook"></i>
-      </a>
-      <a href="https://www.linkedin.com/company/108271463/" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
+      <a href="#"><img src="icon-facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="icon-twitter.png" alt="Twitter" /></a>
+      <a href="#"><img src="icon-linkedin.png" alt="LinkedIn" /></a>
     </div>
   </div>
 </footer>
@@ -106,13 +105,10 @@
 <script>
   const toggle = document.querySelector('.menu-toggle');
   const menu = document.querySelector('.menu-links');
+
   toggle.addEventListener('click', () => {
     menu.classList.toggle('open');
   });
 </script>
-
-  
-
-
 </body>
 </html>
