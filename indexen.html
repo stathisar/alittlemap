@@ -90,33 +90,35 @@
   </section>
 </main>
 
-<footer class="footer" id="footer">
-  <table width="100%" cellpadding="0" cellspacing="0">
-	<col width="85*"/>
-	<col width="85*"/>
-	<col width="85*"/>
-	<tr valign="top">
-		<td width="33%" style="border: none; padding: 0in"><p><br/>
 
-			</p>
-		</td>
-		<td width="33%" style="border: none; padding: 0in"><p align="center">
-			      &copy; 2018–2026 a little map. All rights reserved.</p>
-		</td>
-		<td width="33%" style="border: none; padding: 0in"><p align="right">
-			         <a href="https://www.instagram.com/a.little.map/" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
+<style>
+  .container {
+    display: flex; /* Τα div θα είναι σε γραμμή */
+    background-color: #E3DDDC;
+  }
+  .box {
+    flex: 1; /* Κάθε div παίρνει ίσο μέρος του πλάτους */
+    text-align: center; /* Κέντρο οριζόντια */
+ /*   line-height: 30px; /* Ύψος για να φαίνεται κεντραρισμένο κάθετα (προσαρμόζεις ανάλογα) */
+    /*border: 1px solid #000; /* Οριοθέτηση για να φαίνεται */
+   /* height: 34px; /* Ύψος div */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box"></div>
+  <div class="box"><i><small> &copy; 2018–2026 a little map. All rights reserved.</small></i></div>
+  <div class="box">
+  <a href="https://www.instagram.com/a.little.map/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i></a>
       <a href="https://www.facebook.com/profile.php?id=100057355393472" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook"></i>
-      </a>
+        <i class="fab fa-facebook"></i></a>
       <a href="https://www.linkedin.com/company/108271463/" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a></p>
-		</td>
-	</tr>
-</table>
-</footer>
+        <i class="fab fa-linkedin"></i></div>
+</div>
+
 
 <script>
   const toggle = document.querySelector('.menu-toggle');
